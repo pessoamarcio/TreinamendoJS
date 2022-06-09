@@ -1,0 +1,43 @@
+< ! doctype HTML>
+<html lang = "pt-br">
+	<head>
+		<meta charset = "utf-8">
+		<title> Algoritomo e Lógica de programação</title>
+	</head>
+	<boddy>
+		<h2>Programando JavaScript<h2>
+		<script>
+		
+		//aqui vai ficar o código de JS
+		
+		function Busca(n, num){
+			achou = false;
+			i = 0;
+			
+			while ((i < num.length) && (!achou)){
+				if (n == num[i]){
+					achou= true;
+				}
+				i = i + 1;
+			}
+			if (achou) {
+				document.write("Achou " + num[i-1] + "<br><br>");
+			}
+			else {
+			document.write(n + " não encontrado. <br>");
+			}
+			return num;
+		}
+		lista = new Array ();
+		for (x=0; x<10; x++){
+			lista [x] = parseInt (window.prompt ("Digite um número: "));
+		}
+		valor = parseInt (window.prompt ("Digite um número para ser buscado: "));
+		document.write (lista + "<br><br>");
+		Busca (valor, lista);
+		
+
+		//Fim do script
+		</script>
+	</boddy>
+</html>

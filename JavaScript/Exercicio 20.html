@@ -1,0 +1,35 @@
+< ! doctype HTML>
+<html lang = "pt-br">
+	<head>
+		<meta charset = "utf-8">
+		<title> Algoritomo e Lógica de programação</title>
+	</head>
+	<boddy>
+		<h2>Programando JavaScript<h2>
+		<script>
+		
+		//aqui vai ficar o código de JS
+		
+		function BubbleSort (num){
+			for (i = 0; i < num.length - 1; i++){
+				for (j = 0; j < num.length - 1 -i; j++){
+					
+					if (num [j] > num [j +1]){
+						temp = num[j];
+						num [j] = num [j+1];
+						num [j + 1] = temp;
+						
+					}
+				}	
+			}
+			return num;	
+		}
+		num = [15, 36, 27, 10, 84, 1, 55, 8, 22, 98, 11, -1];
+		document.write (num + "<br>");
+		ord = BubbleSort(num);
+		document.write (ord);
+		
+		//Fim do script
+		</script>
+	</boddy>
+</html>

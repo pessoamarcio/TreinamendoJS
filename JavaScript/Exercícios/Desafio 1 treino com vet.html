@@ -1,0 +1,34 @@
+< ! doctype HTML>
+<html lang = "pt-br">
+	<head>
+		<meta charset = "utf-8">
+		<title> Algoritomo e Lógica de programação</title>
+	</head>
+	<boddy>
+		<h2>Programando JavaScript<h2>
+		<script>
+		
+		//Avaliação da quantidade de grãos
+		
+		var a, b, vet1, somatorio;  //meu: i = trigo; somatorio = op de soma ou incluir em recebe; 
+		vet1 = new Array (8,8);
+		somatorio = 1;  //a quantidade de graos na primeiro tabuleiro é 1
+		a = 1;		//Z = calculo
+		
+		
+		for (a = 1; a < 64; a++){
+			for (b = 1; b < 64; b++){
+				a= a * 2;
+				somatorio = somatorio + a;
+				document.write ("testando o valor: " + a + "<br>");	
+			
+			}
+
+		}
+		document.write ("valor é: " + somatorio + "<br>");
+		
+		
+		//Fim do script
+		</script>
+	</boddy>
+</html>

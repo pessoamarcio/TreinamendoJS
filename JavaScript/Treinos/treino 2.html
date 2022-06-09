@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+	<head>
+		<meta charset = "utf-8">
+		<title> Algoritomo e Lógica de programação</title>
+	</head>
+	<boddy>
+		<h2>Programando JavaScript<h2>
+		<script>
+		
+		//aqui vai ficar o código de JS
+		class Pessoa {
+
+	constructor(nome, idade, sexo, dataDeNascimento) {
+		if (nome === undefined) {
+			throw new Error("O nome é obrigatório");
+    } 		else {
+			this.nome = nome;
+    }
+		this.idade = idade;
+		this.sexo = sexo;
+		this.dataDeNascimento = dataDeNascimento;
+  }
+  apresentar() {
+    console.log(`Ola, meu nome é ${this.nome}, eu tenho ${this.idade} anos`);
+  }
+
+  static tipo() {
+    console.log("Função estática");
+  }
+}
+		
+		
+		</script>
+	</boddy>
+</html>
